@@ -1,14 +1,14 @@
 package days
 
 import extension.allInts
-import extension.inputGroups
+import extension.groups
 
 class Day1: Day() {
-    override fun part1(): Int = solve(1)
+    override fun part1(): Int = solve()
 
     override fun part2(): Int = solve(3)
 
-    private fun solve(size: Int = 1): Int = input.inputGroups().map{ it.allInts().sum() }.sortedDescending().take(size).sum()
+    private fun solve(size: Int = 1): Int = input.groups().map{ it.allInts().sum() }.sortedDescending().take(size).sum()
 }
 
 fun main(){
