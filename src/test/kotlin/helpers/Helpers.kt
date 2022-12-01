@@ -1,5 +1,6 @@
 package helpers
 
+import extension.allInts
 import kotlin.math.sqrt
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -14,7 +15,7 @@ class Helpers {
 
     @Test
     fun `any given point has only 4 directly adjacents`() {
-        assertEquals(4, Point(0, 0).adj().size)
+        assertEquals(4, Point(0, 0).adjacents().size)
     }
 
     @Test
@@ -26,7 +27,7 @@ class Helpers {
             Point(0, 1)
         )
         assertEquals(
-            intended, Point(0, 0).adj()
+            intended, Point(0, 0).adjacents()
         )
     }
 
@@ -37,7 +38,7 @@ class Helpers {
 
     @Test
     fun `allAdj gives correct adjacents for given Point`() {
-        val intended = setOf<Point>(
+        val intended = setOf(
             Point(-1, 0),
             Point(1, 0),
             Point(0, -1),
@@ -66,5 +67,12 @@ class Helpers {
         assertTrue(Point(3,18).belongsTo(t))
         assertTrue(Point(-1, 2).belongsTo(t))
         assertFalse(Point(0,0).belongsTo(t))
+    }
+
+    @Test
+    fun `allInts returns correct List from String`(){
+        assertEquals(listOf(1,2,3), "123".allInts())
+        assertEquals(listOf(1,2,3), "1,2,3".allInts(","))
+        assertEquals(listOf(1,2,3), "1a2a3".allInts())
     }
 }
