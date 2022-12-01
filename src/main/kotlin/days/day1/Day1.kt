@@ -1,10 +1,10 @@
 package days.day1
 
-import days.AbstractDay
+import days.Day
 import extension.allInts
 import extension.inputGroups
 
-class Day1: AbstractDay() {
+class Day1: Day() {
     override fun part1(): Int = solve(1)
 
     override fun part2(): Int = solve(3)
