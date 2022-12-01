@@ -1,6 +1,5 @@
-package days.day1
+package days
 
-import days.Day
 import extension.allInts
 import extension.inputGroups
 
