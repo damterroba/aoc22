@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Add helpers functions and extensions">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/Day2Tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/inputs/day2/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/Day1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/extension/String.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/extension/String.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/helpers/Point.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/helpers/Point.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/helpers/Helpers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/helpers/Helpers.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +98,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/inputs/day2" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/days" />
       <recent name="$PROJECT_DIR$/src/main/resources/inputs/day1" />
     </key>
@@ -107,7 +107,53 @@
       <recent name="days.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Helpers">
+  <component name="RunManager" selected="Kotlin.Day2Kt">
+    <configuration name="Day2Tests.p1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;days.Day2Tests.p1&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Day2Tests.p2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;days.Day2Tests.p2&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Helpers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -122,29 +168,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;helpers.Helpers&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Helpers.Line calculates its length correctly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;helpers.Helpers.Line calculates its length correctly&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -177,31 +200,8 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Helpers.belongsTo returns correctly for given point and line" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;helpers.Helpers.belongsTo returns correctly for given point and line&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Day1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="days.Day1Kt" />
+    <configuration name="Day2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="days.Day2Kt" />
       <module name="aoc22.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -209,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day2Kt" />
+        <item itemvalue="Gradle.Day2Tests.p2" />
+        <item itemvalue="Gradle.Day2Tests.p1" />
         <item itemvalue="Gradle.Helpers" />
         <item itemvalue="Gradle.Helpers.allInts returns correct List from String" />
-        <item itemvalue="Kotlin.Day1Kt" />
-        <item itemvalue="Gradle.Helpers.belongsTo returns correctly for given point and line" />
-        <item itemvalue="Gradle.Helpers.Line calculates its length correctly" />
       </list>
     </recent_temporary>
   </component>
@@ -228,6 +228,7 @@
       <workItem from="1669880397263" duration="7214000" />
       <workItem from="1669892452673" duration="6398000" />
       <workItem from="1669903248267" duration="900000" />
+      <workItem from="1669965404633" duration="1339000" />
     </task>
     <task id="LOCAL-00001" summary="day1">
       <created>1669887233130</created>
