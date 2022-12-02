@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Add helpers functions and extensions">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/Day2Tests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/inputs/day2/input" afterDir="false" />
+    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Added day2 speed solve">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day2.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +226,7 @@
       <workItem from="1669880397263" duration="7214000" />
       <workItem from="1669892452673" duration="6398000" />
       <workItem from="1669903248267" duration="900000" />
-      <workItem from="1669965404633" duration="1339000" />
+      <workItem from="1669965404633" duration="3542000" />
     </task>
     <task id="LOCAL-00001" summary="day1">
       <created>1669887233130</created>
@@ -272,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669900777410</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added day2 speed solve">
+      <created>1669967421518</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669967421518</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +303,7 @@
     <MESSAGE value="Rename abstract day class" />
     <MESSAGE value="Add test routines" />
     <MESSAGE value="Add helpers functions and extensions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add helpers functions and extensions" />
+    <MESSAGE value="Added day2 speed solve" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added day2 speed solve" />
   </component>
 </project>
