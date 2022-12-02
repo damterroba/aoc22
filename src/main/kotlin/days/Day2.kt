@@ -27,14 +27,13 @@ class Day2 : Day() {
             else -> loss[it]
         }
     }
-
-    override fun part2(): Any = input.split("\n").sumOf { it ->
+    val pred = { c: String, s: String -> c.startsWith(s) }
+    override fun part2(): Int = input.split("\n").sumOf {
         val play = it.split(" ")
-        val key = { c: String -> c.startsWith(play.first()) }
         when (play.last()) {
-            "X" -> loss.get(loss.keys.find { k -> key(k) })
-            "Y" -> draws.get(draws.keys.find { k -> key(k) })
-            else -> wins.get(wins.keys.find { k -> key(k) })
+            "X" -> loss.get(loss.keys.find { k -> pred(k, play.first()) })
+            "Y" -> draws.get(draws.keys.find { k -> pred(k, play.first()) })
+            else -> wins.get(wins.keys.find { k -> pred(k, play.first()) })
         }
     }
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Added day2 speed solve">
+    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Use a predicate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day2.kt" afterDir="false" />
     </list>
@@ -227,6 +227,8 @@
       <workItem from="1669892452673" duration="6398000" />
       <workItem from="1669903248267" duration="900000" />
       <workItem from="1669965404633" duration="3542000" />
+      <workItem from="1669969100004" duration="94000" />
+      <workItem from="1669972172874" duration="1715000" />
     </task>
     <task id="LOCAL-00001" summary="day1">
       <created>1669887233130</created>
@@ -277,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669967421518</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Use a predicate">
+      <created>1669969154265</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669969154265</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +313,7 @@
     <MESSAGE value="Add test routines" />
     <MESSAGE value="Add helpers functions and extensions" />
     <MESSAGE value="Added day2 speed solve" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added day2 speed solve" />
+    <MESSAGE value="Use a predicate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use a predicate" />
   </component>
 </project>
