@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Use a predicate (2)">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/Day3Tests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/inputs/day3/input" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Day3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,6 +211,7 @@
       <workItem from="1669969100004" duration="94000" />
       <workItem from="1669972172874" duration="2912000" />
       <workItem from="1670055552019" duration="2858000" />
+      <workItem from="1670073036575" duration="197000" />
     </task>
     <task id="LOCAL-00001" summary="day1">
       <created>1669887233130</created>
@@ -280,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669983592918</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Day3">
+      <created>1670073197232</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670073197232</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +312,7 @@
     <MESSAGE value="Added day2 speed solve" />
     <MESSAGE value="Use a predicate" />
     <MESSAGE value="Use a predicate (2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use a predicate (2)" />
+    <MESSAGE value="Day3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day3" />
   </component>
 </project>

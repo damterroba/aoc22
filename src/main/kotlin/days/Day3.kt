@@ -3,8 +3,8 @@ package days
 class Day3: Day() {
     override fun part1(): Int {
         val groups = input.split("\n").map {
-            it.chunked(it.length/2)
-        }.map{it.map{ s -> s.toSet()  }}
+            it.chunked(it.length/2){s->s.toSet()}
+        }
         return groups.map{it[0].intersect(it[1]) }.sumOf { priority(it.first()) }
     }
 
