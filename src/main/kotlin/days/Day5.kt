@@ -13,15 +13,14 @@ class Day5 : Day() {
         val (stacks, moves) = input.groups()
         val t = stacks.split("\n").dropLast(1).map {
             it.chunked(4) { s -> s.replace("   ".toRegex(), "[#]").replace(" ", "") }
-        }.transpose().map { it.filterNot { s -> s == "[#]" || s.isNullOrBlank() } }.toMutableList()
+        }.transpose("[#]").map { it.filterNot { s -> s == "[#]"} }.toMutableList()
         moves.split("\n").forEach { it ->
             val (n, from, to) = it.allInts(" ")
-            val targets = t[from - 1].take(n)
+            var targets = t[from - 1].take(n)
             if (rev) {
-                t[to - 1] = targets.reversed() + t[to - 1]
-            } else {
-                t[to - 1] = targets + t[to - 1]
+               targets = targets.reversed()
             }
+            t[to - 1] = targets + t[to - 1]
             t[from - 1] = t[from - 1].drop(n)
         }
         return t.map { it.first()!!.filter { c -> c.isLetter() } }.joinToString("")
