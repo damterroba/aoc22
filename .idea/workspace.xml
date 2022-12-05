@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Facto" />
+    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Facto2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/Day5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day5.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +108,7 @@
       <recent name="days.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Day5Test.test">
+  <component name="RunManager" selected="Kotlin.Day5Kt">
     <configuration name="Day4Tests.part1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -175,8 +178,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Day5Test.test" />
         <item itemvalue="Kotlin.Day5Kt" />
+        <item itemvalue="Gradle.Day5Test.test" />
         <item itemvalue="Kotlin.Day4Kt" />
         <item itemvalue="Gradle.Day4Tests.part1" />
         <item itemvalue="Kotlin.Day3Kt" />
@@ -202,7 +205,7 @@
       <workItem from="1670075630689" duration="334000" />
       <workItem from="1670147266335" duration="2817000" />
       <workItem from="1670225322870" duration="5560000" />
-      <workItem from="1670231840090" duration="702000" />
+      <workItem from="1670231840090" duration="1044000" />
     </task>
     <task id="LOCAL-00001" summary="day1">
       <created>1669887233130</created>
@@ -295,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670232515394</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Facto2">
+      <created>1670232883637</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670232883637</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +338,7 @@
     <MESSAGE value="Forgot chunked could take an operation as second parameter" />
     <MESSAGE value="Day 5" />
     <MESSAGE value="Facto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Facto" />
+    <MESSAGE value="Facto2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Facto2" />
   </component>
 </project>
