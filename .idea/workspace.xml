@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Forgot chunked could take an operation as second parameter">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day4.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/Day4Tests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/inputs/day4/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day5.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/extension/List.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/Day5Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/inputs/day5/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +70,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/resources/inputs/day5/input" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -107,30 +111,7 @@
       <recent name="days.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day4Kt">
-    <configuration name="Day3Tests.d1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;days.Day3Tests.d1&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Day5Kt">
     <configuration name="Day4Tests.part1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -154,12 +135,28 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Day2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="days.Day2Kt" />
-      <module name="aoc22.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Day5Test.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;days.Day5Test.test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="Day3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="days.Day3Kt" />
@@ -175,13 +172,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day5Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="days.Day5Kt" />
+      <module name="aoc22.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day5Kt" />
+        <item itemvalue="Gradle.Day5Test.test" />
         <item itemvalue="Kotlin.Day4Kt" />
         <item itemvalue="Gradle.Day4Tests.part1" />
         <item itemvalue="Kotlin.Day3Kt" />
-        <item itemvalue="Gradle.Day3Tests.d1" />
-        <item itemvalue="Kotlin.Day2Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +207,7 @@
       <workItem from="1670073036575" duration="197000" />
       <workItem from="1670075630689" duration="334000" />
       <workItem from="1670147266335" duration="2817000" />
+      <workItem from="1670225322870" duration="4885000" />
     </task>
     <task id="LOCAL-00001" summary="day1">
       <created>1669887233130</created>
