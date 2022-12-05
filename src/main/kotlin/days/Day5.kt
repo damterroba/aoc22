@@ -12,17 +12,17 @@ class Day5 : Day() {
     fun solve(rev: Boolean = false): String {
         val (stacks, moves) = input.groups()
         val t = stacks.split("\n").dropLast(1).map {
-            it.chunked(4) { it.replace("   ".toRegex(), "[#]").replace(" ", "") }
-        }.transpose().toMutableList()
+            it.chunked(4) { s -> s.replace("   ".toRegex(), "[#]").replace(" ", "") }
+        }.transpose().map { it.filterNot { s -> s == "[#]" || s.isNullOrBlank() } }.toMutableList()
         moves.split("\n").forEach { it ->
             val (n, from, to) = it.allInts(" ")
-            val targets = t[from - 1].filterNot { it == "[#]" }.take(n)
+            val targets = t[from - 1].take(n)
             if (rev) {
-                t[to - 1] = targets.reversed() + t[to - 1].filterNotNull()
+                t[to - 1] = targets.reversed() + t[to - 1]
             } else {
-                t[to - 1] =targets.take(n) + t[to - 1].filterNotNull()
+                t[to - 1] = targets + t[to - 1]
             }
-            t[from - 1] = t[from - 1].filterNot { it == "[#]" }.drop(n)
+            t[from - 1] = t[from - 1].drop(n)
         }
         return t.map { it.first()!!.filter { c -> c.isLetter() } }.joinToString("")
     }

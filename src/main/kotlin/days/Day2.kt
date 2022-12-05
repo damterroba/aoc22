@@ -27,6 +27,7 @@ class Day2 : Day() {
             else -> loss[it]
         }
     }
+
     val pred = { c: String, s: String -> c.startsWith(s) }
     override fun part2(): Int = input.split("\n").sumOf {
         val play = it.split(" ")
