@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Day6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/Day6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day6.kt" afterDir="false" />
-    </list>
+    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="use indexOfFirst" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,7 +204,7 @@
       <workItem from="1670225322870" duration="5560000" />
       <workItem from="1670231840090" duration="1784000" />
       <workItem from="1670255658032" duration="467000" />
-      <workItem from="1670311436991" duration="1681000" />
+      <workItem from="1670311436991" duration="2450000" />
     </task>
     <task id="LOCAL-00001" summary="day1">
       <created>1669887233130</created>
@@ -321,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670312219557</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="use indexOfFirst">
+      <created>1670313373630</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1670313373630</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +361,7 @@
     <MESSAGE value="Facto2" />
     <MESSAGE value="Perpare day6" />
     <MESSAGE value="Day6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day6" />
+    <MESSAGE value="use indexOfFirst" />
+    <option name="LAST_COMMIT_MESSAGE" value="use indexOfFirst" />
   </component>
 </project>
