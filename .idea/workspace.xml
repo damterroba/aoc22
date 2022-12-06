@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Facto2">
+    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Perpare day6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/Day5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/Day6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day6.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/days/Day6Tests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/days/Day6Tests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/inputs/day6/input" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/inputs/day6/input" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,30 +110,7 @@
       <recent name="days.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day5Kt">
-    <configuration name="Day4Tests.part1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;days.Day4Tests.part1&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Day6Kt">
     <configuration name="Day5Test.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -155,12 +134,28 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Day3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="days.Day3Kt" />
-      <module name="aoc22.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Day6Tests.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;days.Day6Tests.test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="Day4Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="days.Day4Kt" />
@@ -176,13 +171,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day6Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="days.Day6Kt" />
+      <module name="aoc22.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day6Kt" />
+        <item itemvalue="Gradle.Day6Tests.test" />
         <item itemvalue="Kotlin.Day5Kt" />
         <item itemvalue="Gradle.Day5Test.test" />
         <item itemvalue="Kotlin.Day4Kt" />
-        <item itemvalue="Gradle.Day4Tests.part1" />
-        <item itemvalue="Kotlin.Day3Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +207,9 @@
       <workItem from="1670075630689" duration="334000" />
       <workItem from="1670147266335" duration="2817000" />
       <workItem from="1670225322870" duration="5560000" />
-      <workItem from="1670231840090" duration="1044000" />
+      <workItem from="1670231840090" duration="1784000" />
+      <workItem from="1670255658032" duration="467000" />
+      <workItem from="1670311436991" duration="584000" />
     </task>
     <task id="LOCAL-00001" summary="day1">
       <created>1669887233130</created>
@@ -305,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670232883637</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Perpare day6">
+      <created>1670232976880</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670232976880</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +350,7 @@
     <MESSAGE value="Day 5" />
     <MESSAGE value="Facto" />
     <MESSAGE value="Facto2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Facto2" />
+    <MESSAGE value="Perpare day6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Perpare day6" />
   </component>
 </project>
