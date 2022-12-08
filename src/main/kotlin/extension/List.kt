@@ -10,7 +10,7 @@ fun <T> List<List<T>>.transpose(default: T) :List<List<T>>{
     }
 }
 
-fun <T> List<T>.until(cond: (T)->Boolean): List<T>{
+fun <T> Iterable<T>.until(cond: (T)->Boolean): List<T>{
     var broke = false
     val res= mutableListOf<T>()
     forEach { 
