@@ -1,5 +1,7 @@
 package days
 
+import extension.until
+
 class Day8 : Day() {
     var forest: List<List<Int>>
     init{
@@ -11,44 +13,11 @@ class Day8 : Day() {
 
     override fun part2(): Any {
         return forest.mapIndexed { y, r ->
-            r.mapIndexed { x, _ ->
-                val c = forest[y][x]
-                var left = 0
-                var right = 0
-                var up = 0
-                var down=0
-                if(x>0){
-                    run breaking@{
-                        (x - 1 downTo 0).forEach {
-                            left++
-                            if (forest[y][it] >= c) return@breaking
-                        }
-                    }
-                }
-                if(x < forest[y].size-1){
-                    run breaking@{
-                        (x+1 until forest[y].size).forEach{
-                           right++
-                            if (forest[y][it] >= c) return@breaking
-                        }
-                    }
-                }
-                if(y >0){
-                    run breaking@{
-                        (y-1 downTo 0).forEach {
-                            up++
-                            if (forest[it][x] >= c) return@breaking
-                        }
-                    }
-                }
-                if(y < forest.size-1){
-                    run breaking@{
-                        (y+1 until forest.size).forEach{
-                            down++
-                            if (forest[it][x] >= c) return@breaking
-                        }
-                    }
-                }
+            r.mapIndexed { x, c ->
+                var left = (x-1 downTo 0).toList().until { forest[y][it] < c }.size
+                var right = (x+1 until  forest[y].size).toList().until { forest[y][it] < c }.size
+                var up = (y-1 downTo 0).toList().until { forest[it][x] <c }.size
+                var down= (y+1 until forest.size).toList().until{ forest[it][x] <c }.size
                 up*left*down*right
             }
         }.flatten().max()
