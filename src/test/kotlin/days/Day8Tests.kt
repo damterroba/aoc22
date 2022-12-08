@@ -8,6 +8,7 @@ class Day8Tests {
     
     @Test
     fun t(){
-
+        assertEquals(21, d.part1())
+        assertEquals(8, d.part2())
     }
 }

@@ -1,6 +1,6 @@
 package extension
 
-fun <T> List<List<T>>.transpose(default: T? = null) :List<List<T?>>{
+fun <T> List<List<T>>.transpose(default: T) :List<List<T>>{
     val cols= this.indices
     val maxRowSize = this.maxOf { it.size }
     return (0 until maxRowSize).map { cIndex ->
