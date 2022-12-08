@@ -5,19 +5,20 @@ import kotlin.system.measureTimeMillis
 
 class Day8 : Day() {
     var forest: List<List<Int>>
-
+    val trees: List<Pair<Pair<Int, Int>, Map<Char, List<Boolean>>>>
     init {
         forest = input.split("\n").map { it.map { d -> d.digitToInt() } }
+        trees = trees()
     }
-
+    
     override fun part1(): Int {
-        return trees().count {
+        return trees.count {
             it.second.map { m -> m.value.fold(true) { a, e -> a && e } }.any { t -> t }
         }
     }
 
     override fun part2(): Int {
-        return trees().maxOf {
+        return trees.maxOf {
             listOf('L', 'U', 'R', 'D').map t@{ key ->
                 return@t if (it.second[key]!!.size == 0) {
                     0
@@ -49,9 +50,12 @@ class Day8 : Day() {
 
 fun main() {
     val d = Day8()
-    val t = measureTimeMillis {
+    val t1 = measureTimeMillis { 
         println(d.part1())
+    }
+    println("Part 1 took $t1 ms")
+    val t2 = measureTimeMillis {
         println(d.part2())
     }
-    println("it took me $t ms to run")
+    println("Part 2 took $t2 ms")
 }
