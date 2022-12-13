@@ -12,6 +12,9 @@ repositories {
 }
 
 dependencies {
+//    implementation("org.jetbrains.kotlinx:kotlinx-serialization")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
+    implementation("com.beust:klaxon:5.5")
     testImplementation(kotlin("test"))
 }
 

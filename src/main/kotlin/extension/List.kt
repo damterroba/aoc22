@@ -25,6 +25,7 @@ fun <T> Iterable<T>.until(cond: (T)->Boolean): List<T>{
     return res
 }
 
-fun  List<ULong>.produce(): ULong{
-    return this.reduce { acc, t -> acc*t }
+fun List<Int>.produce():Int{
+    return this.reduce{ acc, t-> acc*t }
 }
+

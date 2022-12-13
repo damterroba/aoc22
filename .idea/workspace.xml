@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Refacto day8">
+    <list default="true" id="333d3dee-75e4-49b2-8558-1c9ab63a6d2c" name="Changes" comment="Day 13 with json Arrays">
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/algo/AStar.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day10.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day11.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day12.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/Day10Tests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/Day11Tests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/Day12Tests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/inputs/day10/input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/inputs/day11/input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/inputs/day12/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/Day13.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/days/Day13Tests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/inputs/day13/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/extension/List.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/extension/List.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,30 +123,7 @@
       <recent name="days" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day12Kt">
-    <configuration name="Day11Tests.t" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;days.Day11Tests.t&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Day13Kt">
     <configuration name="Day12Tests.t" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -175,12 +147,28 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Day10Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="days.Day10Kt" />
-      <module name="aoc22.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Day13Tests.t" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;days.Day13Tests.t&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="Day11Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="days.Day11Kt" />
@@ -196,13 +184,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day13Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="days.Day13Kt" />
+      <module name="aoc22.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day13Kt" />
+        <item itemvalue="Gradle.Day13Tests.t" />
+        <item itemvalue="Kotlin.Day11Kt" />
         <item itemvalue="Kotlin.Day12Kt" />
         <item itemvalue="Gradle.Day12Tests.t" />
-        <item itemvalue="Kotlin.Day11Kt" />
-        <item itemvalue="Gradle.Day11Tests.t" />
-        <item itemvalue="Kotlin.Day10Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +234,8 @@
       <workItem from="1670685823097" duration="4131000" />
       <workItem from="1670690400789" duration="447000" />
       <workItem from="1670831260559" duration="26404000" />
-      <workItem from="1670882215924" duration="5397000" />
+      <workItem from="1670882215924" duration="5676000" />
+      <workItem from="1670916801155" duration="7343000" />
     </task>
     <task id="LOCAL-00001" summary="day1">
       <created>1669887233130</created>
@@ -402,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670519197745</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Days 10 11 &amp; 12 (dirty mode)">
+      <created>1670887870944</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1670887870944</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,6 +448,8 @@
     <MESSAGE value="Day8 dirty mode baby" />
     <MESSAGE value="Facto part2" />
     <MESSAGE value="Refacto day8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refacto day8" />
+    <MESSAGE value="Days 10 11 &amp; 12 (dirty mode)" />
+    <MESSAGE value="Day 13 with json Arrays" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 13 with json Arrays" />
   </component>
 </project>
