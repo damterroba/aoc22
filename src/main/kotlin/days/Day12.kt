@@ -78,10 +78,6 @@ class Day12 : Day() {
         visited.put(start, 0)
         while (!queue.isEmpty()) {
             val current = queue.removeFirst()
-//            if (current == end) {
-//                println("i found end")
-//                return visited
-//            }
             for (neighbor in getNeighbors(current)) {
                 if ((neighbor !in visited.keys || visited.get(current)!! + 1 < visited.get(neighbor)!!) && (
                             grid.elevationAt(neighbor) - grid.elevationAt(current) <= 1
