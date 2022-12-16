@@ -1,14 +1,16 @@
 package days
 
 class Day16 : Day() {
+    val directed:MutableMap<String, MutableMap<String, Int>>
+    val valves:   MutableMap<String, Pair<Int, List<String>>>
+    val flows: Map<String, Int>
+    init{
+        valves = parse()
+        directed = getDirected(valves)
+        flows =  valves.mapNotNull { if (it.value.first > 0) it.key to it.value.first else null }.toMap()
+    }
     override fun part1(): Any {
-        val valves = parse()
-        val flows = valves.mapNotNull { if (it.value.first > 0) it.key to it.value.first else null }.toMap()
-        //go floyd
-        val l = getDirected(valves)
-
-        // turns
-        return search(30, "AA", flows, l)
+        return search(30, "AA", flows, directed)
     }
 
     fun getDirected(valves: MutableMap<String, Pair<Int, List<String>>>): MutableMap<String, MutableMap<String, Int>> {
@@ -68,13 +70,7 @@ class Day16 : Day() {
 
 
     override fun part2(): Any {
-        val valves = parse()
-        val flows = valves.mapNotNull { if (it.value.first > 0) it.key to it.value.first else null }.toMap()
-        //go floyd
-        val l = getDirected(valves)
-
-        // turns
-        return search(26, "AA", flows, l, true)
+        return search(26, "AA", flows, directed, true)
     }
 
     fun parse(): MutableMap<String, Pair<Int, List<String>>> {
