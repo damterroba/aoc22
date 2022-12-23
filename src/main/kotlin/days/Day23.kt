@@ -35,43 +35,18 @@ class Day23 : Day() {
     }
     val states = mutableListOf(elves)
     override fun part1(): Any {
+        var state = elves.toList()
         repeat(10) {
-            val current = states.last()
-            val moves = mutableMapOf<Point, Point>()
-            val nextState = mutableListOf<Point>()
-            current.forEach { p ->
-                val adjacents = p.adjacents().filter { it in states.last() }.size
-                if (adjacents == 0) {
-                    nextState.add(p)
-                } else {
-                    val nextMove = (it..it + directions.size).firstOrNull { index ->
-                        search[directions[index % directions.size]]!!.map { d -> p + d }
-                            .none { p -> p in states.last() }
-                    }
-                    if (nextMove != null) {
-                        moves.put(p, p.move(directions[nextMove%directions.size]))
-                    } else { // can't move
-                        nextState.add(p)
-                    }
-                }
-            }
-            moves.forEach{m ->
-                if(m.value !in moves.filter { it != m }.values){
-                    nextState.add(m.value)
-                }else{
-                    nextState.add(m.key)
-                }
-            }
-            states.add(nextState)
+            state = turn(state, it)
         }
-        val minY = states.last().minOf { it.y }
-        val maxY = states.last().maxOf { it.y }
-        val minX = states.last().minOf { it.x }
-        val maxX = states.last().maxOf { it.x }
+        val minY = state.minOf { it.y }
+        val maxY = state.maxOf { it.y }
+        val minX = state.minOf { it.x }
+        val maxX = state.maxOf { it.x }
         var c = 0
-        (minY..maxY).forEach {y->
-            (minX..maxX).forEach { x->
-                if(Point(x,y)!in states.last() ){
+        (minY..maxY).forEach { y ->
+            (minX..maxX).forEach { x ->
+                if (Point(x, y) !in states.last()) {
                     c++
                 }
             }
@@ -80,44 +55,47 @@ class Day23 : Day() {
         return c
     }
 
+    private fun turn(state: List<Point>, it: Int): List<Point> {
+        val moves = mutableMapOf<Point, Point>()
+        val nextState = mutableListOf<Point>()
+        state.forEach { p ->
+            val adjacents = p.adjacents().filter { it in state}.size
+            if (adjacents == 0) {
+                nextState.add(p)
+            } else {
+                val nextMove = (it..it + directions.size).firstOrNull { index ->
+                    search[directions[index % directions.size]]!!.map { d -> p + d }
+                        .none { p -> p in state }
+                }
+                if (nextMove != null) {
+                    moves.put(p, p.move(directions[nextMove % directions.size]))
+                } else { // can't move
+                    nextState.add(p)
+                }
+            }
+        }
+        moves.forEach { m ->
+            if (moves.values.count { it == m.value } ==1) {
+                nextState.add(m.value)
+            } else {
+                nextState.add(m.key)
+            }
+        }
+        return nextState
+    }
+
 
     override fun part2(): Any {
-        states.clear()
-        states.add(elves)
+        var state = elves
         var i = 0
-        while(true) {
-            val current = states.last()
-            val moves = mutableMapOf<Point, Point>()
-            val nextState = mutableListOf<Point>()
-            current.forEach { p ->
-                val adjacents = p.adjacents().filter { it in states.last() }.size
-                if (adjacents == 0) {
-                    nextState.add(p)
-                } else {
-                    val nextMove = (i..i+ directions.size).firstOrNull { index ->
-                        search[directions[index % directions.size]]!!.map { d -> p + d }
-                            .none { p -> p in states.last() }
-                    }
-                    if (nextMove != null) {
-                        moves.put(p, p.move(directions[nextMove%directions.size]))
-                    } else { // can't move
-                        nextState.add(p)
-                    }
-                }
-            }
-            if(moves.size == 0) {
+        while (true) {
+            val t = turn(state, i)
+            if(state.toSet() == t.toSet()){
                 return ++i
-            }else {
-                moves.forEach { m ->
-                    if (m.value !in moves.filter { it != m }.values) {
-                        nextState.add(m.value)
-                    } else {
-                        nextState.add(m.key)
-                    }
-                }
-                states.add(nextState)
+            }else{
+                state = t
+                i++
             }
-            i++
         }
     }
 }
