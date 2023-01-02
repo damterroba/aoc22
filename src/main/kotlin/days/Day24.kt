@@ -11,18 +11,9 @@ fun Point.cross() = listOf(
 
 class Day24 : Day() {
     val size = input.split("\n").size
-    var p1R = 0
     val walls = input.split("\n")
         .flatMapIndexed { y: Int, s: String -> s.mapIndexedNotNull { x, c -> if (c == '#') Point(x, y) else null } }
-    var winds = mutableListOf( input.split("\n")
-        .flatMapIndexed { y: Int, s: String ->
-            s.mapIndexedNotNull { x, c ->
-                if (c != '.') Point(
-                    x,
-                    y
-                ) to c else null
-            }
-        })
+    var winds = mutableListOf<List<Pair<Point, Char>>>()
     val maxY = walls.maxOf { it.y }
     val maxX = walls.maxOf { it.x }
 
@@ -52,12 +43,22 @@ class Day24 : Day() {
     }
 
     override fun part1(): Int {
-        p1R = traverse(start, end)
-        return p1R
+        winds.clear()
+        winds.add(input.split("\n")
+            .flatMapIndexed { y: Int, s: String ->
+                s.mapIndexedNotNull { x, c ->
+                    if (c != '.') Point(
+                        x,
+                        y
+                    ) to c else null
+                }
+            })
+        return traverse(start, end)
+
     }
 
     override fun part2(): Int{
-        return p1R + traverse(end, start) + traverse(start,end)
+        return part1() + traverse(end, start) + traverse(start,end)
     }
     private fun traverse(from: Point, to : Point): Int {
         var current = setOf(from)
